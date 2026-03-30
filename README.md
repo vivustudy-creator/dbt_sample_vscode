@@ -22,7 +22,7 @@ A simple dbt project scaffold containing:
    ```
 
 3. For local testing: Change `profile: sample_dbt_profile` in `dbt_project.yml`
-4. For Snowflake: `profile: snowflake_profile` is already set
+2. For Snowflake: `profile: snowflake_profile` is already set with credentials (uses default database for the role)
 
 ## run
 
