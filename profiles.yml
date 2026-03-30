@@ -11,11 +11,10 @@ snowflake_profile:
   outputs:
     dev:
       type: snowflake
-      account: KAKFMVM-PBB25736.us-west-2
+      account: KAKFMVM-PBB25736
       user: VIVEK8197
       password: Snowflake@8197339944
-      role: SYSADMIN
-      database: analytics
+      role: ACCOUNTADMIN
       warehouse: COMPUTE_WH
       schema: vscode_data
       threads: 1

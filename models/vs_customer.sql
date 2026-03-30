@@ -1,6 +1,5 @@
 {{ config(
     materialized='table',
-    database='analytics',
     schema='vscode_data',
     alias='vs_customer'
 ) }}
