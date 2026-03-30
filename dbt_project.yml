@@ -1,7 +1,7 @@
 name: sample_dbt_project
 version: '1.0'
 config-version: 2
-profile: sample_dbt_profile
+profile: snowflake_profile
 
 source-paths:
   - models
@@ -19,3 +19,7 @@ seed-paths:
 models:
   sample_dbt_project:
     +materialized: view
+    vs_customer:
+      +materialized: table
+      +database: analytics
+      +schema: vscode_data

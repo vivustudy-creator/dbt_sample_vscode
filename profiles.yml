@@ -5,3 +5,17 @@ sample_dbt_profile:
       type: sqlite
       threads: 1
       database: sample.db
+
+snowflake_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: your_account  # Replace with your Snowflake account
+      user: your_user       # Replace with your username
+      password: your_password  # Replace with your password or use env vars
+      role: your_role       # Replace with your role
+      database: analytics
+      warehouse: your_warehouse  # Replace with your warehouse
+      schema: vscode_data
+      threads: 1
