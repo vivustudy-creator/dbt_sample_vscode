@@ -1,0 +1,7 @@
+sample_dbt_profile:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: sample.db

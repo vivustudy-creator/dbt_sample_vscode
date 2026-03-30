@@ -1,0 +1,21 @@
+name: sample_dbt_project
+version: '1.0'
+config-version: 2
+profile: sample_dbt_profile
+
+source-paths:
+  - models
+analysis-paths:
+  - analysis
+test-paths:
+  - tests
+data-paths:
+  - data
+macro-paths:
+  - macros
+seed-paths:
+  - seeds
+
+models:
+  sample_dbt_project:
+    +materialized: view
