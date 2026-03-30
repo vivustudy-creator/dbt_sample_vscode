@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: sample_model
+    description: "A sample model that doubles the value from seed data"
+    columns:
+      - name: id
+        description: "Unique identifier"
+        tests:
+          - not_null
+          - unique
+      - name: name
+        description: "Name field"
+        tests:
+          - not_null
+      - name: value
+        description: "Original value"
+        tests:
+          - not_null
+      - name: value_double
+        description: "Doubled value"
+        tests:
+          - not_null
