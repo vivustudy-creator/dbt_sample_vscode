@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: vs_customer
+    description: "Customer data loaded from Snowflake RAW.JAFFLE_SHOP.CUSTOMERS"
+    columns:
+      - name: id
+        description: "Customer ID"
+        tests:
+          - not_null
+          - unique
+      - name: first_name
+        description: "First name"
+      - name: last_name
+        description: "Last name"
+      - name: email
+        description: "Email address"
+      - name: phone
+        description: "Phone number"
