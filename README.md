@@ -9,20 +9,18 @@ A simple dbt project scaffold containing:
 
 ## setup
 
-1. Install Python 3.11 and dbt with Snowflake adapter:
+1. Install Python 3.11:
+   - Download from: https://www.python.org/downloads/release/python-3110/
+   - Install and ensure it's added to PATH
+   - Verify: `python --version` should show 3.11.x
+
+2. Install dbt with Snowflake adapter:
    ```bash
-   # Install Python 3.11 from https://www.python.org/downloads/
-   # Then install dbt
    pip install dbt-core dbt-snowflake
    ```
+   Verify: `dbt --version`
 
-2. Set environment variable:
-   ```bash
-   export SNOWFLAKE_PASSWORD=Snowflake@8197339944
-   ```
-
-3. For local testing: Change `profile: sample_dbt_profile` in `dbt_project.yml`
-2. For Snowflake: `profile: snowflake_profile` is already set with credentials (uses default database for the role)
+3. For Snowflake: `profile: snowflake_profile` is already set with credentials (uses default database for the role)
 
 ## run
 
