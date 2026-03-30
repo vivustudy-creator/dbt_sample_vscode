@@ -14,7 +14,7 @@ snowflake_profile:
       account: KAKFMVM-PBB25736
       user: VIVEK8197
       password: Snowflake@8197339944
-      role: ACCOUNTADMIN
+      role: SYSADMIN
       database: analytics
       warehouse: COMPUTE_WH
       schema: vscode_data
