@@ -11,9 +11,9 @@ snowflake_profile:
   outputs:
     dev:
       type: snowflake
-      account: KAKFMVM-PBB25736  # Updated with provided account
-      user: your_user       # Replace with your username
-      password: your_password  # Replace with your password or use env vars
+      account: KAKFMVM-PBB25736
+      user: VIVEK8197
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       role: your_role       # Replace with your role
       database: analytics
       warehouse: your_warehouse  # Replace with your warehouse
