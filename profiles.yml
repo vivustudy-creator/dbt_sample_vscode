@@ -11,7 +11,7 @@ snowflake_profile:
   outputs:
     dev:
       type: snowflake
-      account: KAKFMVM-PBB25736
+      account: KAKFMVM-PBB25736.us-west-2
       user: VIVEK8197
       password: Snowflake@8197339944
       role: SYSADMIN
