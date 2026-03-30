@@ -13,7 +13,7 @@ snowflake_profile:
       type: snowflake
       account: KAKFMVM-PBB25736
       user: VIVEK8197
-      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      password: Snowflake@8197339944
       role: ACCOUNTADMIN
       database: analytics
       warehouse: COMPUTE_WH
